@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>https://saintkim12.github.io/techblog/posts/a/</loc>
+    <lastmod>2018-05-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://saintkim12.github.io/techblog/_old/posts/secondpost/</loc>
     <lastmod>2018-07-04</lastmod>
   </url>
@@ -19,6 +24,11 @@
   <url>
     <loc>https://saintkim12.github.io/techblog/_old/posts/fourthpost/</loc>
     <lastmod>2018-09-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://saintkim12.github.io/techblog/posts/publish-private-npm/</loc>
+    <lastmod>2021-07-28</lastmod>
   </url>
   
   <url>
@@ -47,12 +57,17 @@
   </url>
   
   <url>
-    <loc>https://saintkim12.github.io/techblog/posts/a/</loc>
+    <loc>https://saintkim12.github.io/techblog/tags/</loc>
     <lastmod>2021-07-28</lastmod>
   </url>
   
   <url>
-    <loc>https://saintkim12.github.io/techblog/tags/</loc>
+    <loc>https://saintkim12.github.io/techblog/tags/a/</loc>
+    <lastmod>2021-07-28</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://saintkim12.github.io/techblog/tags/npm/</loc>
     <lastmod>2021-07-28</lastmod>
   </url>
   
@@ -83,11 +98,6 @@
   
   <url>
     <loc>https://saintkim12.github.io/techblog/tags/posts-with-two-tags/</loc>
-    <lastmod>2021-07-28</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://saintkim12.github.io/techblog/tags/a/</loc>
     <lastmod>2021-07-28</lastmod>
   </url>
 </urlset>

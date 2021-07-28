@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비공개 repository npm으로 배포하기</title>
+    <meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+    <link rel="stylesheet" href="/techblog/css/index.css">
+    <link rel="stylesheet" href="/techblog/css/prism-base16-monokai.dark.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/techblog/">my techblog</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/techblog/">Home</a></li>
+        <li class="nav-item"><a href="/techblog/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/techblog/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+      <h1>비공개 repository npm으로 배포하기</h1>
+
+<time datetime="2021-07-28">28 Jul 2021</time><a href="/techblog/tags/npm/" class="post-tag">npm</a>
+
+<h1 id="%EC%9A%94%EC%95%BD%2F%ED%98%B9%EC%9D%80-%EB%8D%94-%EB%B3%B4%EA%B8%B0-%EC%A2%8B%EC%9D%80-%EC%9B%90%EB%B3%B8-%EA%B8%80">요약/혹은 더 보기 좋은 원본 글 <a class="direct-link" href="#%EC%9A%94%EC%95%BD%2F%ED%98%B9%EC%9D%80-%EB%8D%94-%EB%B3%B4%EA%B8%B0-%EC%A2%8B%EC%9D%80-%EC%9B%90%EB%B3%B8-%EA%B8%80">#</a></h1>
+<p><a href="https://medium.com/@changjoopark/%EC%82%AC%EB%82%B4-%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0-%EB%A9%94%EC%86%8C%EB%93%9C%EB%A5%BC-npm-%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0-e1741614611b">사내 유틸리티 메소드를 NPM 패키지로 관리하기</a></p>
+<h1 id="%EC%9E%AC%ED%98%84">재현 <a class="direct-link" href="#%EC%9E%AC%ED%98%84">#</a></h1>
+<h2 id="1.-%EA%B3%B5%ED%86%B5-%EB%AA%A8%EB%93%88-%EB%93%B1-%EA%B4%80%EB%A6%AC%ED%95%A0-%EB%AA%A8%EB%93%88%EC%9D%84-git-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A1%9C-%EB%94%B0%EB%A1%9C-%EB%B9%BC%EA%B8%B0">1. 공통 모듈 등 관리할 모듈을 git 저장소로 따로 빼기 <a class="direct-link" href="#1.-%EA%B3%B5%ED%86%B5-%EB%AA%A8%EB%93%88-%EB%93%B1-%EA%B4%80%EB%A6%AC%ED%95%A0-%EB%AA%A8%EB%93%88%EC%9D%84-git-%EC%A0%80%EC%9E%A5%EC%86%8C%EB%A1%9C-%EB%94%B0%EB%A1%9C-%EB%B9%BC%EA%B8%B0">#</a></h2>
+<h2 id="2.-git-%EC%A3%BC%EC%86%8C-%EB%B0%9B%EA%B8%B0">2. git 주소 받기 <a class="direct-link" href="#2.-git-%EC%A3%BC%EC%86%8C-%EB%B0%9B%EA%B8%B0">#</a></h2>
+<p>그냥 클론할 때 사용하는 주소 받으면 됨</p>
+<h2 id="3.-package.json%EC%97%90-%EC%A0%95%EB%B3%B4-%EC%84%A4%EC%A0%95%ED%95%98%EC%97%AC%2C-%EC%A0%91%EA%B7%BC%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94%EC%A7%80-%ED%85%8C%EC%8A%A4%ED%8A%B8">3. package.json에 정보 설정하여, 접근할 수 있는지 테스트 <a class="direct-link" href="#3.-package.json%EC%97%90-%EC%A0%95%EB%B3%B4-%EC%84%A4%EC%A0%95%ED%95%98%EC%97%AC%2C-%EC%A0%91%EA%B7%BC%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94%EC%A7%80-%ED%85%8C%EC%8A%A4%ED%8A%B8">#</a></h2>
+<pre class="language-js"><code class="language-js"><span class="token comment">// package.json</span><br>    <span class="token string">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token comment">// ...</span><br>        <span class="token string">"[module-name]"</span><span class="token operator">:</span> <span class="token string">"git+http://[id]:[password]@[git-url]"</span><br>    <span class="token punctuation">}</span></code></pre>
+<h2 id="4.-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%9E%85%EB%A0%A5-%EB%8C%80%EC%8B%A0-%ED%86%A0%ED%81%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">4. 비밀번호 입력 대신 토큰 사용하기 <a class="direct-link" href="#4.-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%9E%85%EB%A0%A5-%EB%8C%80%EC%8B%A0-%ED%86%A0%ED%81%B0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">#</a></h2>
+<h3 id="access-token-%EB%A7%8C%EB%93%A4%EA%B8%B0">Access Token 만들기 <a class="direct-link" href="#access-token-%EB%A7%8C%EB%93%A4%EA%B8%B0">#</a></h3>
+<ul>
+<li>bitbucket(v6.8.1)은 Manage Account &gt; Personal access tokens</li>
+<li>토큰명 지정하고 생성(권한은 읽기 권한만 있으면 될듯)<br>
+<img src="/techblog/img/2021-07-28-13-03-29.png" alt="Tokens in bitbucket(v6.8.1)"></li>
+<li>토큰 나오면 복사해두기</li>
+<li>package.json에 password 대신 토큰 입력하기<pre class="language-js"><code class="language-js"><span class="token comment">// package.json</span><br>  <span class="token string">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token comment">// ...</span><br>    <span class="token string">"[module-name]"</span><span class="token operator">:</span> <span class="token string">"git+http://[id]:[access-token]@[git-url]"</span><br>  <span class="token punctuation">}</span></code></pre>
+</li>
+</ul>
+<h2 id="%EC%B0%B8%EA%B3%A0">참고 <a class="direct-link" href="#%EC%B0%B8%EA%B3%A0">#</a></h2>
+<p><a href="https://docs.npmjs.com/files/package.json#git-urls-as-dependencies">npm package.json 관련</a></p>
+
+<hr>
+<ul><li>Next: <a href="/techblog/posts/use-joplin/">Joplin 사용하기</a></li><li>Previous: <a href="/techblog/posts/a/">a</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /techblog/posts/publish-private-npm/ -->
+  </body>
+</html>
