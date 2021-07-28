@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>my techblog</title>
+	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+	
+	<link href="https://saintkim12.github.io/techblog/feed/feed.xml" rel="self"/>
+	<link href="https://saintkim12.github.io/techblog"/>
+	<updated>2021-07-28T01:08:45Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>saintkim12</name>
+		<email>saintkim1232@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>a</title>
+		<link href="https://saintkim12.github.io/techblog/posts/a/"/>
+		<updated>2021-07-28T01:08:45Z</updated>
+		<id>https://saintkim12.github.io/techblog/posts/a/</id>
+		<content type="html">&lt;p&gt;a&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Joplin 사용하기</title>
+		<link href="https://saintkim12.github.io/techblog/posts/use-joplin/"/>
+		<updated>2021-07-28T00:00:00Z</updated>
+		<id>https://saintkim12.github.io/techblog/posts/use-joplin/</id>
+		<content type="html">&lt;h1 id=&quot;joplin&quot;&gt;&lt;a href=&quot;https://joplinapp.org/&quot;&gt;Joplin&lt;/a&gt; &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#joplin&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;동기화 가능한 노트 프로그램&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B8-%EC%9D%B4%EC%9C%A0(feat.-onenote)&quot;&gt;사용해본 이유(feat. Onenote) &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B8-%EC%9D%B4%EC%9C%A0(feat.-onenote)&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;onenote%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EB%8D%B0-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%9E%88%EC%9D%8C&quot;&gt;Onenote를 사용하는데 문제가 있음 &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#onenote%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EB%8D%B0-%EB%AC%B8%EC%A0%9C%EA%B0%80-%EC%9E%88%EC%9D%8C&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;주로 한 환경에서만 메모용으로 쓰는데,
+&lt;ul&gt;
+&lt;li&gt;작성한 내용에 페이지 충돌 감지가 뜨고,(해결하려면 또 PC버전이었나 웹이었나로 하래서 무시함)&lt;/li&gt;
+&lt;li&gt;급하게 적은 메모가 나중에 보니 아예 비어있었던,&lt;br /&gt;
+(급한 상황이라 조작미스거나 저장 자체가 안되었거나 그럴수도 있지만)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이런 경험이 있어 이대로는 못쓰겠다고 판단함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;%EA%B7%B8%EB%9E%98%EC%84%9C-%EB%82%B4-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%9D%80%2C&quot;&gt;그래서 내 요구사항은, &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#%EA%B7%B8%EB%9E%98%EC%84%9C-%EB%82%B4-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%9D%80%2C&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;필요최소한의 기능만 있어서 가벼워야 함
+&lt;ul&gt;
+&lt;li&gt;Mobile + PC Application&lt;/li&gt;
+&lt;li&gt;동기화&lt;/li&gt;
+&lt;li&gt;이미지 업로드&lt;/li&gt;
+&lt;li&gt;+@
+&lt;ul&gt;
+&lt;li&gt;markdown 지원&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%ED%8A%B9%EC%A7%95&quot;&gt;특징 &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#%ED%8A%B9%EC%A7%95&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;WebDAV server를 구할 수 있다면 사용은 무료
+&lt;ul&gt;
+&lt;li&gt;난 Dropbox에 붙임(2기가 주길래..)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;텍스트 기반의 메모하기 좋음
+&lt;ul&gt;
+&lt;li&gt;markdown까지 알면 사용성 증대&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;터미널 버전이 있음
+&lt;ul&gt;
+&lt;li&gt;터미널 버전에 자신이 좋아하는 에디터(난 vscode) 같은거 붙이면 익숙한 환경에서 작성 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;%EC%95%84%EC%89%AC%EC%9B%A0%EB%8D%98%EA%B1%B0%3F&quot;&gt;아쉬웠던거? &lt;a class=&quot;direct-link&quot; href=&quot;https://saintkim12.github.io/techblog/posts/use-joplin/#%EC%95%84%EC%89%AC%EC%9B%A0%EB%8D%98%EA%B1%B0%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;이미지 업로드 시 리사이징 안되는듯?(확인은 안해봤음)&lt;/li&gt;
+&lt;li&gt;웹 버전 미지원(정확히 말하면 웹 호스팅 버전..)
+&lt;ul&gt;
+&lt;li&gt;비공식? 프로젝트 자체는 있는거같은데 셀프 호스팅 해야함
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://discourse.joplinapp.org/t/joplin-web-web-application-companion-for-joplin/555&quot;&gt;Joplin Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.com/annyong/joplin-web&quot;&gt;https://gitlab.com/annyong/joplin-web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/laurent22/joplin/issues/852#issuecomment-430136462&quot;&gt;없는 이유&lt;/a&gt; - 요약하면 web browser에는 SQLite가 없으니까&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;markdown을 잘 사용하지 못할 경우 글 꾸미기같은거 하려면 좀 힘듬
+&lt;ul&gt;
+&lt;li&gt;markdown 자체가 그런게 쉽진 않다만..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+</feed>
