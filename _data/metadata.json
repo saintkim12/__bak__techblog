@@ -1,7 +1,7 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "language": "en",
+  "title": "my techblog",
+  "url": "https://saintkim12.github.io/techblog",
+  "language": "ko",
   "description": "I am writing about my experiences as a naval navel-gazer.",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
@@ -14,8 +14,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "saintkim12",
+    "email": "saintkim1232@gmail.com",
+    "url": "https://saintkim12.github.io"
   }
 }
