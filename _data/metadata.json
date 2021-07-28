@@ -3,16 +3,6 @@
   "url": "https://saintkim12.github.io/techblog",
   "language": "ko",
   "description": "I am writing about my experiences as a naval navel-gazer.",
-  "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "id": "https://example.com/"
-  },
-  "jsonfeed": {
-    "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
-  },
   "author": {
     "name": "saintkim12",
     "email": "saintkim1232@gmail.com",
