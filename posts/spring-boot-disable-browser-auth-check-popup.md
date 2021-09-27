@@ -1,5 +1,5 @@
 ---
-title: [Spring Boot] 브라우저 인증체크 팝업 비활성화
+title: "[Spring Boot] 브라우저 인증체크 팝업 비활성화"
 description:
 date: 2021-09-02
 tags:
@@ -32,7 +32,8 @@ public class CustomizedAuthenticationEntryPointConfig implements AuthenticationE
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage());
     }
 }
-
+```
+```java
 // WebSecurityConfig.java
 // (org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter를 상속받은 설정 클래스)
 @Configuration
